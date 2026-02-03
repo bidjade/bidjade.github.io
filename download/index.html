@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز تحميل المستندات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .pdf-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .pdf-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="bg-white border-b border-gray-200 py-8 mb-10">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">مكتبة الملفات الرقمية</h1>
+            <p class="text-gray-500">تصفح وحمل جميع ملفات PDF والمستندات التعليمية بسهولة</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="pdf-card bg-white p-6 rounded-2xl border border-gray-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-4xl mb-4">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">دليل المستخدم الشامل</h3>
+                <span class="text-xs text-gray-400 mb-4 font-mono">2.4 MB • PDF</span>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">
+                    شرح مفصل لجميع مميزات المنصة وكيفية البدء في استخدام الأدوات البرمجية.
+                </p>
+                <a href="#" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                    <i class="fas fa-download ml-2"></i>
+                    تحميل الملف
+                </a>
+            </div>
+
+            <div class="pdf-card bg-white p-6 rounded-2xl border border-gray-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center text-4xl mb-4">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">تقرير الإنجازات السنوي</h3>
+                <span class="text-xs text-gray-400 mb-4 font-mono">5.8 MB • PDF</span>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">
+                    ملخص للمشاريع التي تم إنجازها خلال العام الماضي مع إحصائيات دقيقة للنمو.
+                </p>
+                <a href="#" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                    <i class="fas fa-download ml-2"></i>
+                    تحميل الملف
+                </a>
+            </div>
+
+            <div class="pdf-card bg-white p-6 rounded-2xl border border-gray-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-green-50 text-green-500 rounded-2xl flex items-center justify-center text-4xl mb-4">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">أساسيات التصميم الجرافيكي</h3>
+                <span class="text-xs text-gray-400 mb-4 font-mono">12.1 MB • PDF</span>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">
+                    كتاب تعليمي يغطي مبادئ الألوان وتنسيق النصوص وتصميم واجهات المستخدم.
+                </p>
+                <a href="#" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                    <i class="fas fa-download ml-2"></i>
+                    تحميل الملف
+                </a>
+            </div>
+
+            <div class="pdf-card bg-white p-6 rounded-2xl border border-gray-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center text-4xl mb-4">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">خطط العمل المستقبلية</h3>
+                <span class="text-xs text-gray-400 mb-4 font-mono">1.2 MB • PDF</span>
+                <p class="text-sm text-gray-500 mb-6 leading-relaxed">
+                    نظرة استشرافية للأهداف التي نسعى لتحقيقها في الربع القادم من العام.
+                </p>
+                <a href="#" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                    <i class="fas fa-download ml-2"></i>
+                    تحميل الملف
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="max-w-2xl mx-auto px-4 mb-20 text-center">
+        <div class="bg-gray-100 rounded-3xl p-8 border border-dashed border-gray-300">
+            <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+            <h3 class="text-lg font-bold text-gray-700">هل لديك ملف لرفعه؟</h3>
+            <p class="text-sm text-gray-500 mb-6">يمكنك إرسال ملفاتك للمراجعة وإضافتها إلى المكتبة العامة.</p>
+            <button class="bg-gray-800 text-white px-8 py-2 rounded-lg text-sm font-medium hover:bg-gray-900 transition-all">ارفع ملفك الآن</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
